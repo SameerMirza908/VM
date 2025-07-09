@@ -11,6 +11,7 @@ const Header = () => {
     { path: '/cash-discount', label: 'Credit Card Processing' },
     { path: '/atm-placement', label: 'ATM Placement' },
     { path: '/about', label: 'About Us' },
+    { path: '/contact-us', label: 'Contact Us' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
