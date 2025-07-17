@@ -7,6 +7,7 @@ import CashDiscount from './pages/CashDiscount';
 import ATMPlacement from './pages/ATMPlacement';
 import About from './pages/About';
 import ContactUs from './pages/ContactUs';
+import Services from './pages/Services';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Header />
         <main>
           <Routes>
+            <Route path="/services" element={<Services />} />
             <Route path="/" element={<Home />} />
             <Route path="/cash-discount" element={<CashDiscount />} />
             <Route path="/atm-placement" element={<ATMPlacement />} />

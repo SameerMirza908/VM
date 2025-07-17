@@ -35,27 +35,27 @@ const CashDiscount = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 to-emerald-100 py-20">
+      <section className="bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
                 Stop Paying Credit Card Processing Fees
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-lg text-[#002D4C] mb-6">
                 With our cash discount program, customers who pay with cards cover the processing fees. 
                 Cash customers receive a discount. It's a win-win solution that can save your business thousands.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="#contact"
-                  className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-200 text-center"
+                  className="bg-[#002D4C] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[#064789] transition duration-200 text-center"
                 >
                   Start Saving Today
                 </a>
                 <a
                   href="#calculator"
-                  className="border border-green-600 text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition duration-200 text-center"
+                  className="border border-[#002D4C] text-[#002D4C] px-6 py-2.5 rounded-lg font-semibold hover:bg-[#BDD4EA] transition duration-200 text-center"
                 >
                   Calculate Savings
                 </a>
@@ -65,7 +65,7 @@ const CashDiscount = () => {
               <img
                 src="https://images.pexels.com/photos/4386433/pexels-photo-4386433.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Credit card processing terminal"
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl max-h-80 w-full object-cover"
               />
             </div>
           </div>
@@ -76,10 +76,10 @@ const CashDiscount = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               How Cash Discount Processing Works
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-[#064789] max-w-3xl mx-auto">
               A simple system that saves you money while offering customers choice
             </p>
           </div>
@@ -88,42 +88,42 @@ const CashDiscount = () => {
             <div>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="block w-6 h-6 bg-green-600 rounded-full text-white text-sm flex items-center justify-center font-bold">1</span>
+                  <div className="bg-[#BDD4EA] p-2 rounded-full">
+                    <span className="block w-6 h-6 bg-[#002D4C] rounded-full text-white text-sm flex items-center justify-center font-bold">1</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
                       Customer Makes Purchase
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-[#064789]">
                       Items are priced at the cash discount price by default.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="block w-6 h-6 bg-green-600 rounded-full text-white text-sm flex items-center justify-center font-bold">2</span>
+                  <div className="bg-[#BDD4EA] p-2 rounded-full">
+                    <span className="block w-6 h-6 bg-[#002D4C] rounded-full text-white text-sm flex items-center justify-center font-bold">2</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
                       Payment Method Selected
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-[#064789]">
                       Cash customers pay the posted price. Card customers pay a small service fee.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 p-2 rounded-full">
-                    <span className="block w-6 h-6 bg-green-600 rounded-full text-white text-sm flex items-center justify-center font-bold">3</span>
+                  <div className="bg-[#BDD4EA] p-2 rounded-full">
+                    <span className="block w-6 h-6 bg-[#002D4C] rounded-full text-white text-sm flex items-center justify-center font-bold">3</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
                       Transaction Processed
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-[#064789]">
                       The service fee covers processing costs, eliminating your fees.
                     </p>
                   </div>
@@ -131,31 +131,31 @@ const CashDiscount = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
+            <div className="bg-[#FFF4D0] p-8 rounded-lg">
+              <h3 className="text-2xl font-semibold text-[#002D4C] mb-6 text-center">
                 Example Transaction
               </h3>
               <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg border">
+                <div className="bg-white p-4 rounded-lg border border-[#BDD4EA]">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Item Total:</span>
-                    <span className="font-semibold">$100.00</span>
+                    <span className="text-[#064789]">Item Total:</span>
+                    <span className="font-semibold text-[#002D4C]">$100.00</span>
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-green-100 p-4 rounded-lg text-center">
-                    <DollarSign className="h-8 w-8 text-green-600 mx-auto mb-2" />
-                    <h4 className="font-semibold text-gray-900">Cash Payment</h4>
-                    <p className="text-2xl font-bold text-green-600">$100.00</p>
-                    <p className="text-sm text-gray-600">Customer saves on service fee</p>
+                  <div className="bg-[#BDD4EA] p-4 rounded-lg text-center">
+                    <DollarSign className="h-8 w-8 text-[#002D4C] mx-auto mb-2" />
+                    <h4 className="font-semibold text-[#002D4C]">Cash Payment</h4>
+                    <p className="text-2xl font-bold text-[#002D4C]">$100.00</p>
+                    <p className="text-sm text-[#064789]">Customer saves on service fee</p>
                   </div>
                   
-                  <div className="bg-blue-100 p-4 rounded-lg text-center">
-                    <CreditCard className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                    <h4 className="font-semibold text-gray-900">Card Payment</h4>
-                    <p className="text-2xl font-bold text-blue-600">$103.50</p>
-                    <p className="text-sm text-gray-600">3.5% service fee added</p>
+                  <div className="bg-[#E6F0FA] p-4 rounded-lg text-center">
+                    <CreditCard className="h-8 w-8 text-[#064789] mx-auto mb-2" />
+                    <h4 className="font-semibold text-[#002D4C]">Card Payment</h4>
+                    <p className="text-2xl font-bold text-[#064789]">$103.50</p>
+                    <p className="text-sm text-[#064789]">3.5% service fee added</p>
                   </div>
                 </div>
               </div>
@@ -165,22 +165,25 @@ const CashDiscount = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#FFF4D0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Benefits for Your Business
             </h2>
+            <p className="text-xl text-[#064789]">
+              Our cash discount program provides value to your business
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-200">
-                <div className="bg-green-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="h-8 w-8 text-green-600" />
+              <div key={index} className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
+                <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <benefit.icon className="h-8 w-8 text-[#002D4C]" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">{benefit.title}</h3>
-                <p className="text-gray-600 text-center">{benefit.description}</p>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">{benefit.title}</h3>
+                <p className="text-[#064789]">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -191,38 +194,38 @@ const CashDiscount = () => {
       <section id="calculator" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Potential Monthly Savings
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-[#064789]">
               See how much you could save with cash discount processing
             </p>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-8">
+          <div className="bg-[#FFF4D0] rounded-lg p-8">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-4 px-4 font-semibold text-gray-900">Monthly Volume</th>
-                    <th className="text-left py-4 px-4 font-semibold text-gray-900">Traditional Processing</th>
-                    <th className="text-left py-4 px-4 font-semibold text-gray-900">Cash Discount</th>
-                    <th className="text-left py-4 px-4 font-semibold text-green-600">Monthly Savings</th>
+                  <tr className="border-b-2 border-[#BDD4EA]">
+                    <th className="text-left py-4 px-4 font-semibold text-[#002D4C]">Monthly Volume</th>
+                    <th className="text-left py-4 px-4 font-semibold text-[#002D4C]">Traditional Processing</th>
+                    <th className="text-left py-4 px-4 font-semibold text-[#002D4C]">Cash Discount</th>
+                    <th className="text-left py-4 px-4 font-semibold text-[#002D4C]">Monthly Savings</th>
                   </tr>
                 </thead>
                 <tbody>
                   {savingsExample.map((row, index) => (
-                    <tr key={index} className="border-b border-gray-200">
-                      <td className="py-4 px-4 font-medium">{row.volume}</td>
-                      <td className="py-4 px-4 text-red-600">{row.traditional}</td>
-                      <td className="py-4 px-4">{row.cashDiscount}</td>
-                      <td className="py-4 px-4 font-bold text-green-600">{row.savings}</td>
+                    <tr key={index} className="border-b border-[#BDD4EA]">
+                      <td className="py-4 px-4 font-medium text-[#002D4C]">{row.volume}</td>
+                      <td className="py-4 px-4 text-[#064789]">{row.traditional}</td>
+                      <td className="py-4 px-4 text-[#064789]">{row.cashDiscount}</td>
+                      <td className="py-4 px-4 font-bold text-[#002D4C]">{row.savings}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-gray-600 mt-4">
+            <p className="text-sm text-[#064789] mt-4">
               * Calculations based on average 2.9% processing fees vs. our flat monthly fee structure
             </p>
           </div>
@@ -230,12 +233,12 @@ const CashDiscount = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-green-600">
+      <section id="contact" className="py-20 bg-gradient-to-br from-[#BDD4EA] to-[#E6F0FA]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
             Ready to Stop Paying Processing Fees?
           </h2>
-          <p className="text-xl text-green-100 mb-8">
+          <p className="text-xl text-[#064789] mb-8">
             Get started with our cash discount program today
           </p>
           
@@ -248,7 +251,7 @@ const CashDiscount = () => {
                 <input
                   type="text"
                   id="business"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="Your Business Name"
                 />
               </div>
@@ -256,7 +259,7 @@ const CashDiscount = () => {
                 <label htmlFor="volume" className="block text-sm font-medium text-gray-700 mb-1">
                   Monthly Card Volume
                 </label>
-                <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]">
                   <option>Under $10,000</option>
                   <option>$10,000 - $25,000</option>
                   <option>$25,000 - $50,000</option>
@@ -271,13 +274,13 @@ const CashDiscount = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="your@email.com"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-200"
+                className="w-full bg-[#002D4C] text-white py-3 rounded-lg font-semibold hover:bg-[#E6A604] transition duration-200"
               >
                 Get My Savings Quote
               </button>

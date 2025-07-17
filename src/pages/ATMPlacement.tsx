@@ -64,27 +64,27 @@ const ATMPlacement = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-50 to-red-100 py-20">
+      <section className="bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
                 Host an ATM at Your Business
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-lg text-[#002D4C] mb-6">
                 Generate additional passive income while providing convenient cash access to your customers. 
                 We handle everything - installation, maintenance, cash management, and security.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="#contact"
-                  className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition duration-200 text-center"
+                  className="bg-[#002D4C] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[#064789] transition duration-200 text-center"
                 >
                   Place an ATM Today
                 </a>
                 <a
                   href="#revenue"
-                  className="border border-orange-600 text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition duration-200 text-center"
+                  className="border border-[#002D4C] text-[#002D4C] px-6 py-2.5 rounded-lg font-semibold hover:bg-[#BDD4EA] transition duration-200 text-center"
                 >
                   View Revenue Potential
                 </a>
@@ -92,9 +92,9 @@ const ATMPlacement = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/6956275/pexels-photo-6956275.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Modern ATM machine"
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl max-h-80 w-full object-cover"
               />
             </div>
           </div>
@@ -105,10 +105,10 @@ const ATMPlacement = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Why Host an ATM?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-[#064789] max-w-3xl mx-auto">
               ATMs provide value to your customers while generating additional revenue for your business
             </p>
           </div>
@@ -116,11 +116,11 @@ const ATMPlacement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
-                <div className="bg-orange-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="h-8 w-8 text-orange-600" />
+                <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <benefit.icon className="h-8 w-8 text-[#002D4C]" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">{benefit.title}</h3>
+                <p className="text-[#064789]">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -128,13 +128,13 @@ const ATMPlacement = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#FFF4D0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               How ATM Placement Works
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-[#064789]">
               A simple process with no upfront costs or ongoing responsibilities
             </p>
           </div>
@@ -143,18 +143,18 @@ const ATMPlacement = () => {
             {process.map((step, index) => (
               <div key={index} className="relative bg-white p-6 rounded-lg shadow-sm">
                 <div className="text-center">
-                  <div className="bg-orange-600 text-white text-2xl font-bold w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-[#002D4C] text-white text-2xl font-bold w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                     {step.step}
                   </div>
-                  <div className="bg-orange-100 p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <step.icon className="h-8 w-8 text-orange-600" />
+                  <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <step.icon className="h-8 w-8 text-[#002D4C]" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
+                  <h3 className="text-xl font-semibold text-[#002D4C] mb-3">{step.title}</h3>
+                  <p className="text-[#064789]">{step.description}</p>
                 </div>
                 {index < process.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <div className="bg-orange-200 h-0.5 w-8"></div>
+                    <div className="bg-[#BDD4EA] h-0.5 w-8"></div>
                   </div>
                 )}
               </div>
@@ -167,49 +167,49 @@ const ATMPlacement = () => {
       <section id="revenue" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Revenue Potential by Business Type
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-[#064789]">
               See what businesses like yours typically earn from ATM hosting
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {locationTypes.map((location, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg border hover:shadow-md transition duration-200">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{location.type}</h3>
+              <div key={index} className="bg-[#E6F0FA] p-6 rounded-lg border border-[#BDD4EA] hover:shadow-md transition duration-200">
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-4">{location.type}</h3>
                 <div className="space-y-2">
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Monthly Transactions:</span>
-                    <span className="font-semibold">{location.transactions}</span>
+                    <span className="text-[#064789]">Monthly Transactions:</span>
+                    <span className="font-semibold text-[#002D4C]">{location.transactions}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Monthly Revenue:</span>
-                    <span className="font-bold text-orange-600">${location.revenue}</span>
+                    <span className="text-[#064789]">Monthly Revenue:</span>
+                    <span className="font-bold text-[#002D4C]">${location.revenue}</span>
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 bg-orange-50 p-8 rounded-lg">
+          <div className="mt-12 bg-[#FFF4D0] p-8 rounded-lg">
             <div className="text-center">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-2xl font-semibold text-[#002D4C] mb-4">
                 Revenue Sharing Details
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-orange-600 mb-2">$3.00</div>
-                  <p className="text-gray-600">Average transaction fee</p>
+                  <div className="text-3xl font-bold text-[#002D4C] mb-2">$3.00</div>
+                  <p className="text-[#064789]">Average transaction fee</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-600 mb-2">50%</div>
-                  <p className="text-gray-600">Your revenue share</p>
+                  <div className="text-3xl font-bold text-[#002D4C] mb-2">50%</div>
+                  <p className="text-[#064789]">Your revenue share</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-600 mb-2">$1.50</div>
-                  <p className="text-gray-600">Your earning per transaction</p>
+                  <div className="text-3xl font-bold text-[#002D4C] mb-2">$1.50</div>
+                  <p className="text-[#064789]">Your earning per transaction</p>
                 </div>
               </div>
             </div>
@@ -218,20 +218,20 @@ const ATMPlacement = () => {
       </section>
 
       {/* Requirements */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#E6F0FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Location Requirements
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-[#064789]">
               Simple requirements to qualify for ATM placement
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Required</h3>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-semibold text-[#002D4C] mb-6">Required</h3>
               <div className="space-y-4">
                 {[
                   'Adequate foot traffic (minimum 100 customers/day)',
@@ -242,15 +242,15 @@ const ATMPlacement = () => {
                   'Commitment to 3-year placement agreement'
                 ].map((requirement, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{requirement}</span>
+                    <CheckCircle className="h-6 w-6 text-[#002D4C] flex-shrink-0 mt-0.5" />
+                    <span className="text-[#064789]">{requirement}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Ideal Locations</h3>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-semibold text-[#002D4C] mb-6">Ideal Locations</h3>
               <div className="space-y-4">
                 {[
                   'High-traffic retail establishments',
@@ -261,8 +261,8 @@ const ATMPlacement = () => {
                   'Strip malls and shopping centers'
                 ].map((ideal, index) => (
                   <div key={index} className="flex items-start space-x-3">
-                    <TrendingUp className="h-6 w-6 text-orange-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-700">{ideal}</span>
+                    <TrendingUp className="h-6 w-6 text-[#F2B705] flex-shrink-0 mt-0.5" />
+                    <span className="text-[#064789]">{ideal}</span>
                   </div>
                 ))}
               </div>
@@ -272,12 +272,12 @@ const ATMPlacement = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-orange-600">
+      <section id="contact" className="py-20 bg-gradient-to-br from-[#BDD4EA] to-[#E6F0FA]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
             Ready to Host an ATM?
           </h2>
-          <p className="text-xl text-orange-100 mb-8">
+          <p className="text-xl text-[#064789] mb-8">
             Get a free site evaluation and revenue estimate
           </p>
           
@@ -290,7 +290,7 @@ const ATMPlacement = () => {
                 <input
                   type="text"
                   id="business"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="Your Business Name"
                 />
               </div>
@@ -298,7 +298,7 @@ const ATMPlacement = () => {
                 <label htmlFor="type" className="block text-sm font-medium text-gray-700 mb-1">
                   Business Type
                 </label>
-                <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]">
                   <option>Select Business Type</option>
                   <option>Convenience Store</option>
                   <option>Restaurant/Bar</option>
@@ -312,7 +312,7 @@ const ATMPlacement = () => {
                 <label htmlFor="traffic" className="block text-sm font-medium text-gray-700 mb-1">
                   Daily Customer Traffic
                 </label>
-                <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]">
                   <option>Select Range</option>
                   <option>50-100 customers/day</option>
                   <option>100-200 customers/day</option>
@@ -327,13 +327,13 @@ const ATMPlacement = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="your@email.com"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition duration-200"
+                className="w-full bg-[#002D4C] text-white py-3 rounded-lg font-semibold hover:bg-[#064789] transition duration-200"
               >
                 Request Site Evaluation
               </button>
