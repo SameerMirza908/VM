@@ -1,53 +1,52 @@
 import React from 'react';
-import { Heart, Users, Handshake, Award, Target, Zap } from 'lucide-react';
+import { Heart, Users, Handshake, Award, Target, Zap, DollarSign, BookOpen, TrendingUp } from 'lucide-react';
 
 const About = () => {
   const values = [
     {
       icon: Heart,
       title: 'Family Values',
-      description: 'Teaching our children honest business practices while serving our community with integrity.'
+      description: 'Teaching our children entrepreneurship while building something meaningful together.'
     },
     {
-      icon: Handshake,
-      title: 'Trust & Reliability',
-      description: 'We build lasting partnerships through consistent service and transparent communication.'
+      icon: BookOpen,
+      title: 'Learning & Growth',
+      description: 'Hands-on experience in managing operations, reading balance sheets, and understanding business.'
     },
     {
       icon: Target,
-      title: 'Simple Business Model',
-      description: 'Buy quality products, sell them at fair prices, and provide exceptional service.'
+      title: 'Thoughtful Growth',
+      description: 'Scaling responsibly while maintaining our commitment to quality service and community engagement.'
     },
     {
       icon: Users,
       title: 'Community Focus',
-      description: 'Supporting local businesses and contributing to the economic growth of our community.'
+      description: 'Delivering convenience to our Dallas community while inspiring the next generation.'
     }
   ];
 
   const milestones = [
-    { year: '2020', event: 'Started with our first vending machine route' },
-    { year: '2021', event: 'Added credit card processing services' },
-    { year: '2022', event: 'Expanded to ATM placement services' },
-    { year: '2023', event: 'Serving 50+ local businesses' },
-    { year: '2024', event: 'Teaching kids the value of entrepreneurship' },
-    { year: '2025', event: 'Continuing to grow and serve our community' }
+    { year: '2025', event: 'L&D Vendpro Solutions founded in Dallas, TX' },
+    { year: '2025', event: 'Hudson gets his first vending machine to save for his first car' },
+    { year: '2025', event: 'Hazel joins the venture with her own vending machine' },
+    { year: '2025', event: 'Teaching financial literacy and business ownership' },
+    { year: 'Future', event: 'Scaling to a few more machines while maintaining quality' },
+    { year: 'Future', event: 'Inspiring other families to start their own entrepreneurial journeys' }
   ];
 
   return (
     <div>
-      {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
-                A Family Business Built on Trust
+                L&D Vendpro Solutions
               </h1>
               <p className="text-lg text-[#002D4C] mb-6">
-                We started FamilyVend to teach our children the value of honest work, 
-                fair business practices, and serving our community. What began as a simple 
-                vending machine route has grown into a comprehensive business solution provider.
+                A family-driven vending machine business founded in 2025 in Dallas, TX, 
+                with a mission to empower young entrepreneurs while delivering convenience 
+                to our community.
               </p>
               <div className="flex items-center space-x-4">
                 <div className="bg-[#002D4C] p-3 rounded-full">
@@ -55,7 +54,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-[#002D4C]">Our Mission</p>
-                  <p className="text-[#064789]">Helping businesses thrive while teaching timeless values</p>
+                  <p className="text-[#064789]">Teaching the next generation the value of hard work and business ownership</p>
                 </div>
               </div>
             </div>
@@ -70,7 +69,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Story */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -78,7 +76,7 @@ const About = () => {
               Our Story
             </h2>
             <p className="text-xl text-[#064789] max-w-3xl mx-auto">
-              Teaching kids business fundamentals through real-world experience
+              How Hudson's ambition sparked a family business journey
             </p>
           </div>
 
@@ -86,34 +84,36 @@ const About = () => {
             <div className="space-y-6">
               <div className="bg-[#BDD4EA] p-6 rounded-lg">
                 <h3 className="text-2xl font-semibold text-[#002D4C] mb-4">
-                  The Beginning
+                  Hudson's Dream
                 </h3>
                 <p className="text-[#064789]">
-                  It started as a way to teach our kids about entrepreneurship. We bought our first 
-                  vending machine and showed them the basics: buy products at wholesale, stock the machine, 
-                  and sell them at retail prices. The profit margin teaches the value of hard work and smart business.
+                  It all started with 15-year-old Hudson, who was juggling school and sports while 
+                  trying to save for his first car. After numerous unsuccessful job applications, 
+                  his step dad Ed saw an opportunity to turn Hudson's ambition into a valuable 
+                  learning experience.
                 </p>
               </div>
 
               <div className="bg-[#FFF4D0] p-6 rounded-lg">
                 <h3 className="text-2xl font-semibold text-[#002D4C] mb-4">
-                  Growing the Business
+                  The First Machine
                 </h3>
                 <p className="text-[#064789]">
-                  As we helped more businesses with vending solutions, we discovered other needs. 
-                  Many business owners were struggling with high credit card processing fees and wanted 
-                  additional revenue streams like ATM services.
+                  Ed, who had long been intrigued by the vending and ATM business for its 
+                  semi-passive income potential, purchased Hudson's first vending machine. 
+                  This allowed Hudson to manage it on his own schedule while building a 
+                  small business from the ground up.
                 </p>
               </div>
 
               <div className="bg-[#E6F0FA] p-6 rounded-lg">
                 <h3 className="text-2xl font-semibold text-[#002D4C] mb-4">
-                  Complete Solutions
+                  Hazel Joins In
                 </h3>
                 <p className="text-[#064789]">
-                  Today, we provide comprehensive business solutions while maintaining our family values. 
-                  Our children are learning not just about profit, but about service, integrity, and 
-                  building lasting relationships with the businesses we serve.
+                  Hudson's enthusiasm was contagious! Soon his younger sister Hazel wanted 
+                  to join the venture. A second vending machine was acquired, and together, 
+                  the siblings began learning the ropes of entrepreneurship.
                 </p>
               </div>
             </div>
@@ -129,15 +129,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values Section */}
       <section className="py-20 bg-[#FFF4D0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
-              Our Family Values
+              What We're Teaching
             </h2>
             <p className="text-xl text-[#064789]">
-              The principles that guide our business and life
+              More than just snacks and drinks - we're building tomorrow's entrepreneurs
             </p>
           </div>
 
@@ -155,15 +154,53 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
+              Real Business Education
+            </h2>
+            <p className="text-xl text-[#064789]">
+              Hudson and Hazel are gaining hands-on experience in real business operations
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#E6F0FA] p-6 rounded-lg text-center">
+              <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Operations Management</h3>
+              <p className="text-[#064789]">Learning to manage day-to-day operations, inventory, and customer service</p>
+            </div>
+
+            <div className="bg-[#BDD4EA] p-6 rounded-lg text-center">
+              <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Financial Literacy</h3>
+              <p className="text-[#064789]">Reading balance sheets, analyzing profit and loss statements, and understanding finances</p>
+            </div>
+
+            <div className="bg-[#FFF4D0] p-6 rounded-lg text-center">
+              <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <DollarSign className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Business Ownership</h3>
+              <p className="text-[#064789]">Understanding the ins and outs of running a business and entrepreneurial thinking</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-[#E6F0FA]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Our Journey
             </h2>
             <p className="text-xl text-[#064789]">
-              From one vending machine to comprehensive business solutions
+              From one teenager's dream to a family business adventure
             </p>
           </div>
 
@@ -174,7 +211,7 @@ const About = () => {
               {milestones.map((milestone, index) => (
                 <div key={index} className="relative flex items-center">
                   <div className={`flex-1 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8 order-2'}`}>
-                    <div className="bg-[#E6F0FA] p-4 rounded-lg">
+                    <div className="bg-white p-4 rounded-lg shadow-sm">
                       <div className="text-2xl font-bold text-[#002D4C] mb-2">
                         {milestone.year}
                       </div>
@@ -192,48 +229,51 @@ const About = () => {
         </div>
       </section>
 
-      {/* Business Philosophy */}
       <section className="py-20 bg-gradient-to-br from-[#BDD4EA] to-[#E6F0FA]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-8">
-            Our Business Philosophy
+            More Than a Business
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-[#064789] p-6 rounded-lg">
-              <div className="text-3xl font-bold text-white mb-2">1</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Buy Smart</h3>
-              <p className="text-[#BDD4EA]">Source quality products at competitive wholesale prices</p>
-            </div>
-            
-            <div className="bg-[#064789] p-6 rounded-lg">
-              <div className="text-3xl font-bold text-white mb-2">2</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Serve Well</h3>
-              <p className="text-[#BDD4EA]">Provide exceptional service and maintain our equipment</p>
-            </div>
-            
-            <div className="bg-[#064789] p-6 rounded-lg">
-              <div className="text-3xl font-bold text-white mb-2">3</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Share Success</h3>
-              <p className="text-[#BDD4EA]">Create win-win partnerships that benefit everyone</p>
-            </div>
+          <blockquote className="text-xl text-[#064789] italic mb-8">
+            "L&D Vendpro Solutions is more than a business; it's a family journey to inspire 
+            independence, responsibility, and entrepreneurial spirit in Dallas and beyond."
+          </blockquote>
+
+          <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h3 className="text-2xl font-semibold text-[#002D4C] mb-4">Our Goal</h3>
+            <p className="text-[#064789] text-lg">
+              To grow thoughtfully, scaling to a few more machines while maintaining our 
+              commitment to quality service and community engagement. We're not just providing 
+              snacks and drinks—we're teaching the next generation the value of hard work, 
+              financial literacy, and business ownership.
+            </p>
           </div>
 
-          <blockquote className="text-xl text-[#064789] italic mb-8">
-            "We're not just teaching our kids about business - we're showing them how to serve 
-            others while building something meaningful together."
-          </blockquote>
+          <div className="bg-[#002D4C] p-8 rounded-lg mb-8">
+            <h3 className="text-2xl font-semibold text-white mb-4">Want to Start Your Own Family Business?</h3>
+            <p className="text-[#BDD4EA] text-lg mb-4">
+              If you're interested in learning more about the process and how to do the same for your family, 
+              reach out to Ed for guidance and insights.
+            </p>
+            <a 
+              href="mailto:ed@vendprodallas.com"
+              className="inline-block bg-[#F2B705] text-[#002D4C] px-8 py-3 rounded-lg font-semibold hover:bg-[#BDD4EA] transition duration-200"
+            >
+              Contact Ed: ed@vendprodallas.com
+            </a>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/#contact"
-              className="bg-[#002D4C] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#064789]  transition duration-200"
+              className="bg-[#002D4C] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#064789] transition duration-200"
             >
-              Work With Our Family
+              Work With Us
             </a>
             <a
               href="/services"
-              className="border border-black bg-[#002D4C] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#064789] transition duration-200"
+              className="border border-[#002D4C] bg-transparent text-[#002D4C] px-8 py-3 rounded-lg font-semibold hover:bg-[#002D4C] hover:text-white transition duration-200"
             >
               View Our Services
             </a>

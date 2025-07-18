@@ -1,11 +1,10 @@
-import React from 'react';
 
+import React from 'react';
 
 
 const ContactUs = () => {
   
   return (
- 
  <section id="contact" className="py-20 bg-white flex flex-col items-center px-4">
   {/* Section Title */}
   <div className="text-center mb-12">
@@ -46,7 +45,7 @@ const ContactUs = () => {
 
   {/* Appointment Section Title */}
   <div className="text-center mb-6 w-full max-w-4xl mb-8">
-    <h3 className="text-2xl md:text-3xl font-bold text-[#002D4C] mb-4">
+    <h3 className="text-2xl md:text-3xl font-bold text-[#002D4C]">
       Book an Appointment With Us
     </h3>
     <p className="text-lg text-[#002D4C]">
@@ -55,15 +54,21 @@ const ContactUs = () => {
   </div>
 
   {/* Appointment Calendar */}
-<div className="w-full max-w-4xl mb-8">
-  <div className="responsive-iframe-wrapper">
+  <div className="w-full max-w-4xl mb-8">
     <iframe
       src="https://link.pipelinepro.co/widget/booking/OEJgWhHim5pDGRFigkgz"
-      title="Appointment Booking"
+      style={{
+        width: '100%',
+        height: '900px',
+        border: 'none',
+        borderRadius: '12px',
+        overflow: 'hidden',
+      }}
       scrolling="no"
+      id="OEJgWhHim5pDGRFigkgz_1751880860212"
+      title="Appointment Booking"
     />
   </div>
-</div>
 
   <script
     src="https://link.pipelinepro.co/js/form_embed.js"

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logo from '../images/L&D-Logo.gif'; // adjust the path if needed
+import logo from '../images/L&D-Logo.gif'; 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,17 +21,16 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 sm:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center flex-shrink-0">
-            <img 
-              src={logo} 
-              alt="Logo" 
-              className="h-[50px] w-[100px] sm:h-[60px] sm:w-[120px] md:h-[70px] md:w-[140px] lg:h-[80px] lg:w-[160px]" 
+        <div className="flex justify-between items-center h-20 sm:h-24 lg:h-28">
+          
+          <Link to="/services" className="flex items-center flex-shrink-0">
+            <img
+              src={logo}
+              alt="L&D Vendpro Solutions Logo"
+              className="h-[70px] w-[140px] sm:h-[80px] sm:w-[160px] md:h-[90px] md:w-[180px] lg:h-[100px] lg:w-[200px] xl:h-[110px] xl:w-[220px]"
             />
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-6 xl:space-x-8">
             {navItems.map((item) => (
               <Link
@@ -48,7 +47,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
           <div className="hidden lg:flex flex-shrink-0">
             <Link
               to="/#contact"
@@ -58,7 +56,6 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden flex-shrink-0 p-2"
@@ -72,10 +69,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t border-[#BDD4EA] shadow-lg">
-          <div className="px-2 pt-2 pb-3 space-y-1 max-h-[calc(100vh-80px)] overflow-y-auto">
+          <div className="px-2 pt-2 pb-3 space-y-1 max-h-[calc(100vh-96px)] overflow-y-auto">
             {navItems.map((item) => (
               <Link
                 key={item.path}
