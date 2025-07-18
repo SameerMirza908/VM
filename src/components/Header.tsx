@@ -8,8 +8,8 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: '/services', label: 'Services' },
-    { path: '/', label: 'Vending Services' },
+    { path: '/', label: 'Services' },
+    { path: '/vending-services', label: 'Vending Services' },
     { path: '/cash-discount', label: 'Credit Card Processing' },
     { path: '/atm-placement', label: 'ATM Placement' },
     { path: '/about', label: 'About Us' },
@@ -23,7 +23,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 sm:h-24 lg:h-28">
           
-          <Link to="/services" className="flex items-center flex-shrink-0">
+          <Link to="/" className="flex items-center flex-shrink-0">
             <img
               src={logo}
               alt="L&D Vendpro Solutions Logo"
