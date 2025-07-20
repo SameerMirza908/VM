@@ -13,7 +13,7 @@ const Services = () => {
         'All maintenance covered',
         'Revenue sharing program'
       ],
-      link: '/',
+      link: '/vending-services',
       linkText: 'Learn More About Vending',
       color: 'primary',
       image: 'https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=800'
