@@ -6,22 +6,26 @@ const CashDiscount = () => {
     {
       icon: TrendingDown,
       title: 'Eliminate Processing Fees',
-      description: 'Customers paying with cards cover the processing fees, not you.'
+      description: 'Customers paying with cards cover the processing fees, not you.',
+      image: 'https://images.pexels.com/photos/4386433/pexels-photo-4386433.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: DollarSign,
       title: 'Increase Cash Payments',
-      description: 'Customers choose cash to avoid the service fee, improving your cash flow.'
+      description: 'Customers choose cash to avoid the service fee, improving your cash flow.',
+      image: 'https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Calculator,
       title: 'Transparent Pricing',
-      description: 'Clear, upfront pricing with no hidden fees or long-term contracts.'
+      description: 'Clear, upfront pricing with no hidden fees or long-term contracts.',
+      image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: CheckCircle,
       title: 'Fully Compliant',
-      description: 'Our system meets all legal requirements for cash discount programs.'
+      description: 'Our system meets all legal requirements for cash discount programs.',
+      image: 'https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];
 
@@ -34,9 +38,15 @@ const CashDiscount = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-12 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/3182796/pexels-photo-3182796.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          }}
+        />
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
@@ -65,14 +75,14 @@ const CashDiscount = () => {
               <img
                 src="https://images.pexels.com/photos/4386433/pexels-photo-4386433.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Credit card processing terminal"
-                className="rounded-lg shadow-2xl max-h-80 w-full object-cover"
+                className="rounded-lg shadow-2xl max-h-80 w-full object-cover transform hover:scale-105 transition-transform duration-300"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -87,51 +97,78 @@ const CashDiscount = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#BDD4EA] p-2 rounded-full">
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-[#BDD4EA] p-2 rounded-full flex-shrink-0">
                     <span className="block w-6 h-6 bg-[#002D4C] rounded-full text-white text-sm flex items-center justify-center font-bold">1</span>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
-                      Customer Makes Purchase
-                    </h3>
-                    <p className="text-[#064789]">
-                      Items are priced at the cash discount price by default.
-                    </p>
+                  <div className="flex-1">
+                    <div className="flex items-start space-x-3">
+                      <div>
+                        <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
+                          Customer Makes Purchase
+                        </h3>
+                        <p className="text-[#064789]">
+                          Items are priced at the cash discount price by default.
+                        </p>
+                      </div>
+                      <img
+                        src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt="Customer shopping"
+                        className="w-16 h-16 object-cover rounded-lg shadow-md opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#BDD4EA] p-2 rounded-full">
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-[#BDD4EA] p-2 rounded-full flex-shrink-0">
                     <span className="block w-6 h-6 bg-[#002D4C] rounded-full text-white text-sm flex items-center justify-center font-bold">2</span>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
-                      Payment Method Selected
-                    </h3>
-                    <p className="text-[#064789]">
-                      Cash customers pay the posted price. Card customers pay a small service fee.
-                    </p>
+                  <div className="flex-1">
+                    <div className="flex items-start space-x-3">
+                      <div>
+                        <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
+                          Payment Method Selected
+                        </h3>
+                        <p className="text-[#064789]">
+                          Cash customers pay the posted price. Card customers pay a small service fee.
+                        </p>
+                      </div>
+                      <img
+                        src="https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt="Payment selection"
+                        className="w-16 h-16 object-cover rounded-lg shadow-md opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-[#BDD4EA] p-2 rounded-full">
+                <div className="flex items-start space-x-4 group">
+                  <div className="bg-[#BDD4EA] p-2 rounded-full flex-shrink-0">
                     <span className="block w-6 h-6 bg-[#002D4C] rounded-full text-white text-sm flex items-center justify-center font-bold">3</span>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
-                      Transaction Processed
-                    </h3>
-                    <p className="text-[#064789]">
-                      The service fee covers processing costs, eliminating your fees.
-                    </p>
+                  <div className="flex-1">
+                    <div className="flex items-start space-x-3">
+                      <div>
+                        <h3 className="text-lg font-semibold text-[#002D4C] mb-2">
+                          Transaction Processed
+                        </h3>
+                        <p className="text-[#064789]">
+                          The service fee covers processing costs, eliminating your fees.
+                        </p>
+                      </div>
+                      <img
+                        src="https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt="Transaction complete"
+                        className="w-16 h-16 object-cover rounded-lg shadow-md opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#FFF4D0] p-8 rounded-lg">
+            <div className="bg-[#FFF4D0] p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold text-[#002D4C] mb-6 text-center">
                 Example Transaction
               </h3>
@@ -144,14 +181,14 @@ const CashDiscount = () => {
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-[#BDD4EA] p-4 rounded-lg text-center">
+                  <div className="bg-[#BDD4EA] p-4 rounded-lg text-center hover:shadow-md transition-shadow duration-300">
                     <DollarSign className="h-8 w-8 text-[#002D4C] mx-auto mb-2" />
                     <h4 className="font-semibold text-[#002D4C]">Cash Payment</h4>
                     <p className="text-2xl font-bold text-[#002D4C]">$100.00</p>
                     <p className="text-sm text-[#064789]">Customer saves on service fee</p>
                   </div>
                   
-                  <div className="bg-[#E6F0FA] p-4 rounded-lg text-center">
+                  <div className="bg-[#E6F0FA] p-4 rounded-lg text-center hover:shadow-md transition-shadow duration-300">
                     <CreditCard className="h-8 w-8 text-[#064789] mx-auto mb-2" />
                     <h4 className="font-semibold text-[#002D4C]">Card Payment</h4>
                     <p className="text-2xl font-bold text-[#064789]">$103.50</p>
@@ -164,7 +201,6 @@ const CashDiscount = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
       <section className="py-20 bg-[#FFF4D0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -178,21 +214,36 @@ const CashDiscount = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <div key={index} className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
-                <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="h-8 w-8 text-[#002D4C]" />
+              <div key={index} className="relative text-center p-6 rounded-lg hover:shadow-lg transition duration-200 overflow-hidden group">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                  style={{
+                    backgroundImage: `url(${benefit.image})`,
+                  }}
+                />
+                
+                <div className="relative z-10">
+                  <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <benefit.icon className="h-8 w-8 text-[#002D4C]" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#002D4C] mb-3">{benefit.title}</h3>
+                  <p className="text-[#064789]">{benefit.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">{benefit.title}</h3>
-                <p className="text-[#064789]">{benefit.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Savings Calculator */}
-      <section id="calculator" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="calculator" className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-5"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          }}
+        />
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Potential Monthly Savings
@@ -202,7 +253,7 @@ const CashDiscount = () => {
             </p>
           </div>
 
-          <div className="bg-[#FFF4D0] rounded-lg p-8">
+          <div className="bg-[#FFF4D0]/95 backdrop-blur-sm rounded-lg p-8 shadow-xl">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
@@ -215,7 +266,7 @@ const CashDiscount = () => {
                 </thead>
                 <tbody>
                   {savingsExample.map((row, index) => (
-                    <tr key={index} className="border-b border-[#BDD4EA]">
+                    <tr key={index} className="border-b border-[#BDD4EA] hover:bg-white/50 transition-colors duration-200">
                       <td className="py-4 px-4 font-medium text-[#002D4C]">{row.volume}</td>
                       <td className="py-4 px-4 text-[#064789]">{row.traditional}</td>
                       <td className="py-4 px-4 text-[#064789]">{row.cashDiscount}</td>
@@ -232,9 +283,16 @@ const CashDiscount = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-[#BDD4EA] to-[#E6F0FA]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section id="contact" className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#BDD4EA]/90 to-[#E6F0FA]/90" />
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
             Ready to Stop Paying Processing Fees?
           </h2>
@@ -242,23 +300,22 @@ const CashDiscount = () => {
             Get started with our cash discount program today
           </p>
           
-          <div className="bg-white rounded-lg p-8 max-w-md mx-auto">
-            <form className="space-y-4">
+          <div className="bg-white/95 backdrop-blur-sm rounded-lg p-8 max-w-md mx-auto shadow-xl">
+            <div className="space-y-4">
               <div className="text-left">
-                <label htmlFor="business" className="block text-sm font-medium text-gray-700 mb-1">
+                <div className="block text-sm font-medium text-gray-700 mb-1">
                   Business Name
-                </label>
+                </div>
                 <input
                   type="text"
-                  id="business"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="Your Business Name"
                 />
               </div>
               <div className="text-left">
-                <label htmlFor="volume" className="block text-sm font-medium text-gray-700 mb-1">
+                <div className="block text-sm font-medium text-gray-700 mb-1">
                   Monthly Card Volume
-                </label>
+                </div>
                 <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]">
                   <option>Under $10,000</option>
                   <option>$10,000 - $25,000</option>
@@ -268,23 +325,22 @@ const CashDiscount = () => {
                 </select>
               </div>
               <div className="text-left">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <div className="block text-sm font-medium text-gray-700 mb-1">
                   Email
-                </label>
+                </div>
                 <input
                   type="email"
-                  id="email"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="your@email.com"
                 />
               </div>
               <button
-                type="submit"
+                type="button"
                 className="w-full bg-[#002D4C] text-white py-3 rounded-lg font-semibold hover:bg-[#E6A604] transition duration-200"
               >
                 Get My Savings Quote
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </section>

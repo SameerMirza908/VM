@@ -6,22 +6,26 @@ const About = () => {
     {
       icon: Heart,
       title: 'Family Values',
-      description: 'Teaching our children entrepreneurship while building something meaningful together.'
+      description: 'Teaching our children entrepreneurship while building something meaningful together.',
+      image: 'https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: BookOpen,
       title: 'Learning & Growth',
-      description: 'Hands-on experience in managing operations, reading balance sheets, and understanding business.'
+      description: 'Hands-on experience in managing operations, reading balance sheets, and understanding business.',
+      image: 'https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Target,
       title: 'Thoughtful Growth',
-      description: 'Scaling responsibly while maintaining our commitment to quality service and community engagement.'
+      description: 'Scaling responsibly while maintaining our commitment to quality service and community engagement.',
+      image: 'https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Users,
       title: 'Community Focus',
-      description: 'Delivering convenience to our Dallas community while inspiring the next generation.'
+      description: 'Delivering convenience to our Dallas community while inspiring the next generation.',
+      image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];
 
@@ -36,8 +40,15 @@ const About = () => {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-12 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          }}
+        />
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
@@ -60,10 +71,11 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Family business meeting"
-                className="rounded-lg shadow-2xl max-h-80 w-full object-cover"
+                className="rounded-lg shadow-2xl w-full h-80 object-cover transform hover:scale-105 transition-transform duration-300"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg" />
             </div>
           </div>
         </div>
@@ -128,7 +140,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
       <section className="py-20 bg-[#FFF4D0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -142,18 +153,26 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-200 text-center">
-                <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="h-8 w-8 text-[#002D4C]" />
+              <div key={index} className="relative bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition duration-200 text-center overflow-hidden group">
+                <div 
+                  className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                  style={{
+                    backgroundImage: `url(${value.image})`,
+                  }}
+                />
+                
+                <div className="relative z-10">
+                  <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <value.icon className="h-8 w-8 text-[#002D4C]" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#002D4C] mb-3">{value.title}</h3>
+                  <p className="text-[#064789]">{value.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">{value.title}</h3>
-                <p className="text-[#064789]">{value.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -166,28 +185,55 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#E6F0FA] p-6 rounded-lg text-center">
-              <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-white" />
+            <div className="relative bg-[#E6F0FA] p-6 rounded-lg text-center overflow-hidden group">
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  backgroundImage: 'url(https://images.pexels.com/photos/3184434/pexels-photo-3184434.jpeg?auto=compress&cs=tinysrgb&w=600)',
+                }}
+              />
+              
+              <div className="relative z-10">
+                <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Operations Management</h3>
+                <p className="text-[#064789]">Learning to manage day-to-day operations, inventory, and customer service</p>
               </div>
-              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Operations Management</h3>
-              <p className="text-[#064789]">Learning to manage day-to-day operations, inventory, and customer service</p>
             </div>
 
-            <div className="bg-[#BDD4EA] p-6 rounded-lg text-center">
-              <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="h-8 w-8 text-white" />
+            <div className="relative bg-[#BDD4EA] p-6 rounded-lg text-center overflow-hidden group">
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  backgroundImage: 'url(https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600)',
+                }}
+              />
+              
+              <div className="relative z-10">
+                <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <BookOpen className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Financial Literacy</h3>
+                <p className="text-[#064789]">Reading balance sheets, analyzing profit and loss statements, and understanding finances</p>
               </div>
-              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Financial Literacy</h3>
-              <p className="text-[#064789]">Reading balance sheets, analyzing profit and loss statements, and understanding finances</p>
             </div>
 
-            <div className="bg-[#FFF4D0] p-6 rounded-lg text-center">
-              <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <DollarSign className="h-8 w-8 text-white" />
+            <div className="relative bg-[#FFF4D0] p-6 rounded-lg text-center overflow-hidden group">
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  backgroundImage: 'url(https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=600)',
+                }}
+              />
+              
+              <div className="relative z-10">
+                <div className="bg-[#002D4C] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <DollarSign className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Business Ownership</h3>
+                <p className="text-[#064789]">Understanding the ins and outs of running a business and entrepreneurial thinking</p>
               </div>
-              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Business Ownership</h3>
-              <p className="text-[#064789]">Understanding the ins and outs of running a business and entrepreneurial thinking</p>
             </div>
           </div>
         </div>
@@ -229,8 +275,16 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-[#BDD4EA] to-[#E6F0FA]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/3182795/pexels-photo-3182795.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#BDD4EA]/90 to-[#E6F0FA]/90" />
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-8">
             More Than a Business
           </h2>
@@ -240,7 +294,7 @@ const About = () => {
             independence, responsibility, and entrepreneurial spirit in Dallas and beyond."
           </blockquote>
 
-          <div className="bg-white p-8 rounded-lg shadow-lg mb-12">
+          <div className="bg-white/95 backdrop-blur-sm p-8 rounded-lg shadow-xl mb-12">
             <h3 className="text-2xl font-semibold text-[#002D4C] mb-4">Our Goal</h3>
             <p className="text-[#064789] text-lg">
               To grow thoughtfully, scaling to a few more machines while maintaining our 
@@ -250,7 +304,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-[#002D4C] p-8 rounded-lg mb-8">
+          <div className="bg-[#002D4C]/95 backdrop-blur-sm p-8 rounded-lg mb-8">
             <h3 className="text-2xl font-semibold text-white mb-4">Want to Start Your Own Family Business?</h3>
             <p className="text-[#BDD4EA] text-lg mb-4">
               If you're interested in learning more about the process and how to do the same for your family, 
@@ -273,7 +327,7 @@ const About = () => {
             </a>
             <a
               href="/services"
-              className="border border-[#002D4C] bg-transparent text-[#002D4C] px-8 py-3 rounded-lg font-semibold hover:bg-[#002D4C] hover:text-white transition duration-200"
+              className="border border-[#002D4C] bg-white/90 text-[#002D4C] px-8 py-3 rounded-lg font-semibold hover:bg-[#002D4C] hover:text-white transition duration-200"
             >
               View Our Services
             </a>

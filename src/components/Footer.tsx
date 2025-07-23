@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-[#002D4C] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
+         
           <div className="col-span-1 md:col-span-2">
             <div className="mb-4">
               <Link to="/" className="flex items-center">
@@ -22,20 +22,19 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-[#F2B705]" />
-                <span className="text-sm text-[#BDD4EA]">(555) 123-4567</span>
+                <span className="text-sm text-[#BDD4EA]">+1 214-888-4195</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-[#F2B705]" />
-                <span className="text-sm text-[#BDD4EA]">info@familyvend.com</span>
+                <span className="text-sm text-[#BDD4EA]">ed@vendprodallas.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-[#F2B705]" />
-                <span className="text-sm text-[#BDD4EA]">Local Service Area</span>
+                <span className="text-sm text-[#BDD4EA]">Serving all of DFW</span>
               </div>
             </div>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white pt-6">Our Services</h3>
             <ul className="space-y-2">
@@ -57,7 +56,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white pt-6">Company</h3>
             <ul className="space-y-2">

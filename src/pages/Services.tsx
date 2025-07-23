@@ -52,9 +52,16 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - Consistent with Home page */}
-      <section className="bg-gradient-to-br from-[#BDD4EA] to-[#F2B705] py-[150px]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     
+      <section className="relative py-[150px] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/3182796/pexels-photo-3182796.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#BDD4EA]/90 to-[#F2B705]/90" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Complete Business Solutions
@@ -82,7 +89,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -95,40 +101,63 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
-              <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <DollarSign className="h-8 w-8 text-[#002D4C]" />
+            <div className="relative text-center p-6 rounded-lg hover:shadow-lg transition duration-200 overflow-hidden group">
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  backgroundImage: 'url(https://images.pexels.com/photos/3943723/pexels-photo-3943723.jpeg?auto=compress&cs=tinysrgb&w=600)',
+                }}
+              />
+              <div className="relative z-10">
+                <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <DollarSign className="h-8 w-8 text-[#002D4C]" />
+                </div>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">No Upfront Costs</h3>
+                <p className="text-[#064789]">
+                  All our services require zero initial investment. We handle installation, setup, and equipment.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">No Upfront Costs</h3>
-              <p className="text-[#064789]">
-                All our services require zero initial investment. We handle installation, setup, and equipment.
-              </p>
             </div>
 
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
-              <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-[#002D4C]" />
+            <div className="relative text-center p-6 rounded-lg hover:shadow-lg transition duration-200 overflow-hidden group">
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  backgroundImage: 'url(https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=600)',
+                }}
+              />
+              <div className="relative z-10">
+                <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="h-8 w-8 text-[#002D4C]" />
+                </div>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Generate Revenue</h3>
+                <p className="text-[#064789]">
+                  Turn your business location into additional income streams with our proven solutions.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Generate Revenue</h3>
-              <p className="text-[#064789]">
-                Turn your business location into additional income streams with our proven solutions.
-              </p>
             </div>
 
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
-              <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8 text-[#002D4C]" />
+            <div className="relative text-center p-6 rounded-lg hover:shadow-lg transition duration-200 overflow-hidden group">
+              <div 
+                className="absolute inset-0 bg-cover bg-center opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+                style={{
+                  backgroundImage: 'url(https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=600)',
+                }}
+              />
+              <div className="relative z-10">
+                <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-[#002D4C]" />
+                </div>
+                <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Full Service Support</h3>
+                <p className="text-[#064789]">
+                  We handle all maintenance, restocking, and customer service so you can focus on your business.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-[#002D4C] mb-3">Full Service Support</h3>
-              <p className="text-[#064789]">
-                We handle all maintenance, restocking, and customer service so you can focus on your business.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main Services Section */}
       <section id="services" className="py-20 bg-[#FFF4D0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -184,8 +213,9 @@ const Services = () => {
                         <img
                           src={service.image}
                           alt={service.title}
-                          className="w-full h-64 md:h-72 object-cover"
+                          className="w-full h-64 md:h-72 object-cover transform hover:scale-105 transition-transform duration-300"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                       </div>
                     </div>
                   </div>
@@ -196,9 +226,37 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Additional Benefits */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="grid grid-cols-4 h-full">
+            <div 
+              className="bg-cover bg-center"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400)',
+              }}
+            />
+            <div 
+              className="bg-cover bg-center"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=400)',
+              }}
+            />
+            <div 
+              className="bg-cover bg-center"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=400)',
+              }}
+            />
+            <div 
+              className="bg-cover bg-center"
+              style={{
+                backgroundImage: 'url(https://images.pexels.com/photos/3182795/pexels-photo-3182795.jpeg?auto=compress&cs=tinysrgb&w=400)',
+              }}
+            />
+          </div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
               Why Businesses Choose Us
@@ -209,19 +267,19 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
               <div className="text-3xl font-bold text-[#F2B705] mb-2">500+</div>
               <p className="text-[#064789] font-semibold">Satisfied Clients</p>
             </div>
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
               <div className="text-3xl font-bold text-[#F2B705] mb-2">$2M+</div>
               <p className="text-[#064789] font-semibold">Revenue Generated</p>
             </div>
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
               <div className="text-3xl font-bold text-[#F2B705] mb-2">24/7</div>
               <p className="text-[#064789] font-semibold">Support Available</p>
             </div>
-            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200">
+            <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
               <div className="text-3xl font-bold text-[#F2B705] mb-2">100%</div>
               <p className="text-[#064789] font-semibold">Satisfaction Rate</p>
             </div>
@@ -229,9 +287,16 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-[#BDD4EA] to-[#E6F0FA]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section id="contact" className="relative py-20 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1600)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#BDD4EA]/90 to-[#E6F0FA]/90" />
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#002D4C] mb-4">
             Ready to Get Started?
           </h2>
@@ -239,23 +304,22 @@ const Services = () => {
             Contact us today to learn how our services can benefit your business
           </p>
           
-          <div className="bg-white rounded-lg p-8 max-w-md mx-auto">
-            <form className="space-y-4">
+          <div className="bg-white/95 backdrop-blur-sm rounded-lg p-8 max-w-md mx-auto shadow-xl">
+            <div className="space-y-4">
               <div className="text-left">
-                <label htmlFor="business" className="block text-sm font-medium text-gray-700 mb-1">
+                <div className="block text-sm font-medium text-gray-700 mb-1">
                   Business Name
-                </label>
+                </div>
                 <input
                   type="text"
-                  id="business"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="Your Business Name"
                 />
               </div>
               <div className="text-left">
-                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
+                <div className="block text-sm font-medium text-gray-700 mb-1">
                   Interested Service
-                </label>
+                </div>
                 <select className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]">
                   <option>Select a Service</option>
                   <option>Vending Machine Services</option>
@@ -265,23 +329,21 @@ const Services = () => {
                 </select>
               </div>
               <div className="text-left">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <div className="block text-sm font-medium text-gray-700 mb-1">
                   Email
-                </label>
+                </div>
                 <input
                   type="email"
-                  id="email"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="your@email.com"
                 />
               </div>
               <div className="text-left">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                <div className="block text-sm font-medium text-gray-700 mb-1">
                   Phone
-                </label>
+                </div>
                 <input
                   type="tel"
-                  id="phone"
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#064789] focus:border-[#064789]"
                   placeholder="(555) 123-4567"
                 />
@@ -292,7 +354,7 @@ const Services = () => {
               >
                 Book a Free Consultation
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </section>
