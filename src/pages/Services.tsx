@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coffee, CreditCard, DollarSign, ArrowRight, CheckCircle, Users, TrendingUp, Shield } from 'lucide-react';
+import { Coffee, CreditCard, DollarSign, ArrowRight, CheckCircle, Users, TrendingUp, Shield, MapPin, Zap, Clock, Award } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -268,20 +268,28 @@ const Services = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
-              <div className="text-3xl font-bold text-[#F2B705] mb-2">500+</div>
-              <p className="text-[#064789] font-semibold">Satisfied Clients</p>
+              <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <MapPin className="h-8 w-8 text-[#002D4C]" />
+              </div>
+              <p className="text-[#064789] font-semibold">Local Accountability</p>
             </div>
             <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
-              <div className="text-3xl font-bold text-[#F2B705] mb-2">$2M+</div>
-              <p className="text-[#064789] font-semibold">Revenue Generated</p>
+              <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Zap className="h-8 w-8 text-[#002D4C]" />
+              </div>
+              <p className="text-[#064789] font-semibold">Fast, Responsive Service</p>
             </div>
             <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
-              <div className="text-3xl font-bold text-[#F2B705] mb-2">24/7</div>
-              <p className="text-[#064789] font-semibold">Support Available</p>
+              <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-8 w-8 text-[#002D4C]" />
+              </div>
+              <p className="text-[#064789] font-semibold">24/7 Support Available</p>
             </div>
             <div className="text-center p-6 rounded-lg hover:shadow-lg transition duration-200 bg-white/80 backdrop-blur-sm">
-              <div className="text-3xl font-bold text-[#F2B705] mb-2">100%</div>
-              <p className="text-[#064789] font-semibold">Satisfaction Rate</p>
+              <div className="bg-[#BDD4EA] p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-[#002D4C]" />
+              </div>
+              <p className="text-[#064789] font-semibold">100% Satisfaction Rate</p>
             </div>
           </div>
         </div>
